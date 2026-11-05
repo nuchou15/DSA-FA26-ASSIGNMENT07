@@ -33,7 +33,7 @@ fun testHashTable() {
     }
     check(table["key50"] == 50)
     check(table["apple"] == 10)
-    println("HashTable tests passed!")
+    println("HashTable tests passed!!")
 }
 
 
@@ -49,11 +49,11 @@ fun testLempelZiv() {
     check(compressor.decode(compressor.encode(original)) == original)
 
     // test ordinary text
-    original = "hello hello!"
+    original = "belloooo bello"
     check(compressor.decode(compressor.encode(original)) == original)
 
     // test an empty string
     original = ""
     check(compressor.decode(compressor.encode(original)) == original)
-    println("LempelZiv tests passed!")
+    println("LempelZiv tests passed!!")
 }
